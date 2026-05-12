@@ -149,15 +149,15 @@
   dependencies:
     defer-to-connect "^2.0.1"
 
-"@textlint/ast-node-types@^13.4.1":
-  version "13.4.1"
-  resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-13.4.1.tgz#00424f7b9bc6fe15cf6a78468ffe1e5d1adce5b2"
-  integrity sha512-qrZyhCh8Ekk6nwArx3BROybm9BnX6vF7VcZbijetV/OM3yfS4rTYhoMWISmhVEP2H2re0CtWEyMl/XF+WdvVLQ==
-
 "@textlint/ast-node-types@^14.7.1":
   version "14.7.1"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-14.7.1.tgz#8f2760a064753e5375009ed3d8e196f77dc8052f"
   integrity sha512-7C/xYNZtaG+erIMjNZbRz7av9/S5eC+GAMh0rJ6A9Hik6nS4WyWKblutw2p+O2YWWT2tmOjzu/81fWzzDzmtRg==
+
+"@textlint/ast-node-types@^15.2.1":
+  version "15.6.1"
+  resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-15.6.1.tgz#f483ef4fe42e95ce1ca81be05c4e47d233745826"
+  integrity sha512-KXUhbpBctWkSumyNwFQBufwWCcjdxARGVnlH6AfERaFAnpi300L8og+l2Hs/bIqkXu26T5tIs7jNnRgUs20hmQ==
 
 "@textlint/ast-tester@^14.7.1":
   version "14.7.1"
@@ -4004,10 +4004,10 @@ strip-indent@^4.0.0:
   dependencies:
     min-indent "^1.0.1"
 
-strip-json-comments@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-5.0.1.tgz#0d8b7d01b23848ed7dbdf4baaaa31a8250d8cfa0"
-  integrity sha512-0fk9zBqO67Nq5M/m45qHCJxylV/DhBlIOVExqgOMiCCrzrhU6tCibRXNqE3jwJLftzE9SNuZtYbpzcO+i9FiKw==
+strip-json-comments@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-5.0.3.tgz#b7304249dd402ee67fd518ada993ab3593458bcf"
+  integrity sha512-1tB5mhVo7U+ETBKNf92xT4hrQa3pm0MZ0PQvuDnWgAAGHDsfp4lPSpiS6psrSiet87wyGPh9ft6wmhOMQ0hDiw==
 
 strip-json-comments@~2.0.1:
   version "2.0.1"
@@ -4076,12 +4076,12 @@ textlint-rule-helper@^1.1.5:
   dependencies:
     unist-util-visit "^1.1.0"
 
-textlint-rule-helper@^2.0.0, textlint-rule-helper@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/textlint-rule-helper/-/textlint-rule-helper-2.3.1.tgz#d2b82dbd46f25694fd315cbee46479bb545af87f"
-  integrity sha512-b1bijvyiUmKinfFE5hkQMSXs3Ky8jyZ3Y6SOoTRJKV9HLL2LWUVFAUezO7z4FpAkVvYruDYWCwA5qWV8GmvyUw==
+textlint-rule-helper@^2.0.0, textlint-rule-helper@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/textlint-rule-helper/-/textlint-rule-helper-2.5.0.tgz#d31ff25a6de66ccb9d1a473a114f5d411f305b90"
+  integrity sha512-QIbFPtyqLy0g5BJn8mryk9iHzGYicNaFIpLFPiEnb4RXxrEGeQ2W2aARQ9yEXLIAqo+OwK4ndWBAWkbgJEPzTQ==
   dependencies:
-    "@textlint/ast-node-types" "^13.4.1"
+    "@textlint/ast-node-types" "^15.2.1"
     structured-source "^4.0.0"
     unist-util-visit "^2.0.3"
 
@@ -4092,14 +4092,13 @@ textlint-rule-no-todo@^2.0.1:
   dependencies:
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-terminology@^5.2.12:
-  version "5.2.12"
-  resolved "https://registry.yarnpkg.com/textlint-rule-terminology/-/textlint-rule-terminology-5.2.12.tgz#27dd48fbccff7fe0c21eb5f2acef475e2f9701ed"
-  integrity sha512-qLyuqbGN7GBqKR7NT2yLyo8mmYmoCkk8bu3szvLxUkM+1Cc0D9G6MDyaYFrMM26GZuNbTREmuFxon/vTBDR/pw==
+textlint-rule-terminology@^5.2.16:
+  version "5.2.16"
+  resolved "https://registry.yarnpkg.com/textlint-rule-terminology/-/textlint-rule-terminology-5.2.16.tgz#455bfa75e1068bb44b6216327d0d9e18fce7a009"
+  integrity sha512-1HQotOLJb6kGAgmRYEA9KiIU+fQupZcOVpZEEhFwmRempvpNnhKowa7Zfpss2v6sbp8Ya+iXRs9xKGw+xheCbQ==
   dependencies:
-    lodash "^4.17.21"
-    strip-json-comments "^5.0.1"
-    textlint-rule-helper "^2.3.1"
+    strip-json-comments "^5.0.3"
+    textlint-rule-helper "^2.5.0"
 
 textlint@^14.7.1:
   version "14.7.1"
